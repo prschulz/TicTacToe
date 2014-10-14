@@ -1,0 +1,91 @@
+
+body {
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+
+header {
+
+}
+
+.gameboard {
+  width: 600px;
+  height: 600px;
+  margin: 25px auto 100px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*Overall box styling will apply to all boxes*/
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(45, 45, 45, 0.7);
+  margin: auto;
+/*  border: 1px solid #000;*/
+  display: inline-block;
+}
+
+.box:hover{
+  background-color: rgba(45, 45, 45, 0.9);
+}
+
+/*SELECTION CLASSES*/
+.selectedTurn1 {
+  background-color: rgba(150, 150, 150, 0.8);
+  background-image: url("images/cross.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.selectedTurn2 {
+  background-color: rgba(15, 45, 120, 0.8);
+  background-image: url("images/circle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.box:hover.selectedTurn1 {
+  background-color: rgba(150, 150, 150, 0.8);
+}
+
+.box:hover.selectedTurn2 {
+  background-color: rgba(15, 45, 120, 0.8);
+}
+
+/*RESET BUTTON*/
+#reset{}
+
+.resetButton {
+  background-color: background-color: rgba(44, 47, 49, 0.8);
+  margin-right:auto;
+  margin-left: auto;
+}
+
+/*TURN DESIGNATOR*/
+#player {
+  margin: auto;
+}
+
+/*box classes to identify new line*/
+
+#b0{}
+#b1{}
+#b2{}
+#b3{}
+#b4{}
+#b5{}
+#b6{}
+#b7{}
+#b8{}
+
+/*Modal id for modal*/
+#myModal{}
+#modaltext {}
+
